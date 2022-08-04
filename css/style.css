@@ -118,14 +118,15 @@
   justify-content: center;
 }
 
-
-
 .card-header {
   display: flex;
   margin: 5%;
   width: auto;
   height: 200px;
-  background-color: #18191F;
+  background-image: url(../images/sucursal1.jpg);
+  background-position: center;
+  background-size: 106%;
+  background-repeat: no-repeat;
 }
 
 .card-header>p {
@@ -136,19 +137,8 @@
   height: 25px;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-  row-gap: 10px;
-  text-align: start;
-}
-
 .card-body>a {
-  font-weight: 700;
+  background-color: black;
 }
 
 /* Fin Sucursales*/
