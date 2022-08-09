@@ -22,14 +22,22 @@
   align-items: center;
   grid-area: shop;
 }
+.card-body>p {
+  margin-bottom: 1rem;
+}
 
+p , ul {
+  margin-bottom: 0;
+}
 .nav-cat-wraper {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 5px;
 }
-
+li:hover {
+  color: #CCA328;
+}
 
 .section-art {
   display: flex;
@@ -224,7 +232,7 @@
   color: white;
 }
 
-.container,
+.container-index,
 .container-shop,
 .container-suc,
 .container-us,
@@ -249,11 +257,11 @@
 
 /* fin contacto */
 @media screen and (min-width: 220px) {
-  .container {
+   .container-index {
     grid-template-columns: auto;
     grid-template-rows: 60px auto auto auto;
     grid-template-areas: "header""information""images""footer";
-  }
+  } 
 
   .container-shop {
     grid-template-columns: auto;
@@ -277,7 +285,7 @@
     grid-template-areas: "header""form""footer";
   }
 
-  header {
+  /* header {
     grid-area: header;
     background-color: white;
     width: 100%;
@@ -288,6 +296,9 @@
     justify-content: space-between;
     position: fixed;
     height: 60px;
+  } */
+  nav {
+    grid-area: header;
   }
 
   .nav-boton {
@@ -300,10 +311,10 @@
     align-items: center;
     border: none;
   }
-  .hearder-logo {
+  /* .hearder-logo {
     width: auto;
     height: auto;
-  }
+  } */
 
   .section-butom {
     background-color: #CCA328;
@@ -338,8 +349,8 @@
 
   .section-images {
     grid-area: images;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     justify-items: center;
     grid-template-areas: "shoes""shirt1""shirt2";
   }
@@ -584,11 +595,11 @@
   }
 }
 @media screen and (min-width: 930px) {
-  .container {
+   .container-index {
     grid-template-columns: 60% 40%;
     grid-template-rows: 60px 140% 60px;
     grid-template-areas: "header header""images information""footer footer";
-  }
+   }
 
   .section-images {
     grid-area: images;
@@ -596,7 +607,7 @@
     grid-template-rows: 50% 50%;
     justify-items: center;
     grid-template-areas: "shirt1 shirt2""shoes shoes";
-  }
+  } 
 
   .container-shop {
     grid-template-rows: 60px auto 60px;
@@ -703,6 +714,7 @@
     background: white;
     position: unset;
     height: unset;
+    z-index: 10;
   }
 
   .section-butom {
